@@ -22,6 +22,25 @@ public class Main {
             double altura = sc.nextDouble();
             height[i] = altura;
         }
+        //soma de valores com a finalidade de saber a media
+        double soma = 0.0;
+        double media = 0.0;
+        for (int i = 0; i < n; i++) {
+            soma += height[i];
+        }
+        media = soma / n;
+        int qtdMenor16 = 0;
+        for (int i = 0; i < n; i++) {
+            if (age[i] < 16) {
+                qtdMenor16++;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            if (age[i] < 16) {
+                System.out.println(name[i]);
+            }
+        }
+        System.out.println();
 
     }
 }
