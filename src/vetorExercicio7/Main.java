@@ -13,8 +13,19 @@ public class Main {
             sc.nextLine();
             double valores = sc.nextDouble();
             N[i] = valores;
-
+        }
+        double soma = 0.0;
+        for (int i = 0; i < n; i++) {
+                soma += N[i];
 
         }
+        double media = soma/n;
+
+        for (int i = 0; i < n; i++) {
+            System.out.println("Valores:" + N[i]);
+
+        }
+        System.out.println(soma);
+        System.out.println(media);
     }
 }
