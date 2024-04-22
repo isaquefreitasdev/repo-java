@@ -17,15 +17,18 @@ public class Main {
             notaOne[i] = sc.nextDouble();
             notaTwo[i] = sc.nextDouble();
         }
-        double soma = 0;
-        double media = 0;
-        for (int i = 0; i < n ; i++) {
-            soma+= notaOne[i] + notaTwo[i];
-        }
-        media =
-        for (int i = 0; i < n; i++) {
 
+        double[] media = new double[n];
+        for (int i = 0; i < n ; i++) {
+            sc.nextLine();
+            media[i] = (notaOne[i] + notaTwo[i])/2;
         }
+        for (int i = 0; i < n ; i++) {
+            if (media[i] > 6.0){
+                System.out.println(names[i]);
+            }
+        }
+
 
     }
 }
